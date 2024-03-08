@@ -1,0 +1,9 @@
+:root{
+    --header: black;
+}
+
+header{
+    background-color: var(--header);
+    padding: 15px;
+    box-sizing: border-box;
+}
