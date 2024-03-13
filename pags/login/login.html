@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../CSS/login/geralLog.css">
     <link rel="stylesheet" href="../../CSS/geral/geral.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>RLM - criar conta</title>
 </head>
 <body>
     <header>
         <h1>RLM</h1>
-        <div>
-            Menu
+        <div class="containerMenu">
+            <span class="material-symbols-outlined btnMenu">
+                menu
+                </span>
         </div>
         <nav>
             <ul>
@@ -22,26 +26,47 @@
         </nav>
     </header>
     <main>
-        <h2>Selecione quem você é:</h2>
-        <section>
-            <div>
-                <button>
-                    a
-                </button>
-            </div>
+        <h2 class="textBasic">Selecione quem você é:</h2>
 
-            <div>
-                <button>
-                    a
-                </button>
-            </div>
+        <!--MOBILE SCREEN-->
+        <div class="mobile">
+            <section class="buttonsLine">
+                    <button>
+                        a
+                    </button>
+    
+                    <button>
+                        a
+                    </button>
+    
+                    <button>
+                        a
+                    </button>
+            </section>
+        </div>
 
-            <div>
-                <button>
-                    a
-                </button>
-            </div>
-        </section>
+        <!--DESKTOP SCREEN-->
+        <div class="desktop">
+            <section class="buttonsLine">
+                <div class="SquareEffect">
+                    <button>
+                        a
+                    </button>
+                </div>
+    
+                <div class="SquareEffect">
+                    <button>
+                        a
+                    </button>
+                </div>
+    
+                <div class="SquareEffect">
+                    <button>
+                        a
+                    </button>
+                </div>
+            </section>
+        </div>
         <p><span id="selectName"></span> Explicar função</p>
 
         <form action="">
