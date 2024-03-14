@@ -16,13 +16,10 @@ buttonsOptMobile.forEach(element => {
 buttonLogs.forEach(element => {
     element.addEventListener('click', (e) => {
         const condition = e.target.className.indexOf('join')
-        const action = logInteration;
-        function logInteration() {
-            alert('teste') 
-        }
+        const action = document.querySelector('.join')
 
         if(displays(condition, action)){
-            //implementar a lógica
+            
         }
     })
 });
