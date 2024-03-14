@@ -1,10 +1,18 @@
 const buttonsOptMobile = document.querySelectorAll('.btn');
+const buttonLogs = document.querySelector('.logWay');
 buttonsOptMobile.forEach(element => {
     element.addEventListener('click', (e) => {
-        if(e.target.className.indexOf('defaultControl') != -1){
-            alert('formularios dos coletores e acumuladores')
-        }else{
-            alert('formulario das empresas')
-        }
+        const condition = e.target.className.indexOf('defaultControl')
+        const action = document.querySelector('.formEmpresa');
+        displays(condition, action)
+        
     })
 });
+
+function displays(condition, action) {
+    if(condition != -1){
+        action.style.display = 'none'
+    }{
+        action.style.display = 'block'
+    }
+}

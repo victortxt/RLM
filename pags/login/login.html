@@ -50,13 +50,13 @@
             <!--DESKTOP SCREEN-->
             <div class="desktop">
                 <section class="buttonsLine">
-                    <div class="SquareEffect">
+                    <div class="SquareEffect defaultControl">
                         <button>
                             a
                         </button>
                     </div>
         
-                    <div class="SquareEffect">
+                    <div class="SquareEffect defaultControl">
                         <button>
                             a
                         </button>
@@ -86,8 +86,8 @@
                     <input type="email" required>
                 </div>
                     <!--Card Empresa-->
-                <div class="campo">
-                    <div class="formEmpresa">
+                    <div class="formEmpresa" style="display: none;">
+                        <div class="campo">
                         <section id="empresaCardForm">
                             <div class="campo">
                                 <label for="">Material e Valores</label>
@@ -133,19 +133,25 @@
     
                                 </div>
                             </div>
-                        </section>
-                    </div>
+                        </div>
+                    </section>
                 </div>
                     
                     <!--Card Empresa-->
                 <div class="campo">
                     <input type="submit" value="Criar conta">
+                    <span class="textBasic" class="logWay">Já tenho conta</span>
                 </div>
+                <div class="campo" style="display:none">
+                    <input type="submit" value="Entrar">
+                    <span class="textBasic"  class="logWay">Criar Conta</span>
+                </div>
+
             </form>
         </section>
         <section class="container squareBonecos">
             <h2>Teste</h2>
-            
+
         </section>
     </main>
 </body>
