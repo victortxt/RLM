@@ -9,8 +9,12 @@ let materialsSelected = Array();
 
 buttonsOptMobile.forEach(element => {
     element.addEventListener('click', (e) => {
+
+        
+        
         if(e.target.className.indexOf('defaultControl') != -1){
             document.querySelector('.formEmpresa').style.display = 'none';
+            
         }else{
             document.querySelector('.formEmpresa').style.display = 'block';
         }
@@ -20,9 +24,13 @@ buttonsOptMobile.forEach(element => {
 buttonLog.addEventListener('click', () => {
     document.querySelector('#containerCreateAcount').style.display = 'none'
     document.querySelector('#containerLoginAcount').style.display = 'block'
+    document.querySelector('.formEmpresa').style.display = 'none';
+    document.querySelector('#emailBoxText').style.display = 'none';
+    
 })
 
 buttonCreate.addEventListener('click', () => {
     document.querySelector('#containerCreateAcount').style.display = 'block'
     document.querySelector('#containerLoginAcount').style.display = 'none'
+    document.querySelector('#emailBoxText').style.display = 'flex';
 })
