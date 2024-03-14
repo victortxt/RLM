@@ -9,9 +9,6 @@ let materialsSelected = Array();
 
 buttonsOptMobile.forEach(element => {
     element.addEventListener('click', (e) => {
-
-        
-        
         if(e.target.className.indexOf('defaultControl') != -1){
             document.querySelector('.formEmpresa').style.display = 'none';
             
