@@ -12,7 +12,7 @@ buttonsOptMobile.forEach(element => {
 function displays(condition, action) {
     if(condition != -1){
         action.style.display = 'none'
-    }{
+    }else{
         action.style.display = 'block'
     }
 }
