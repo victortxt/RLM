@@ -27,9 +27,8 @@
         </nav>
     </header>
     <main>
-        <h2 class="textBasic">
-            <span class="destaque">xxx</span>, ...
-        </h2>
+
+        <h2 class="textBasic">Selecione quem é você</h2>
 
         <!--MOBILE SCREEN-->
         <div class="mobile">
@@ -70,6 +69,9 @@
                 </div>
             </section>
         </div>
+        <h2 class="textBasic">
+            <span class="destaque">xxx</span>, ...
+        </h2>
         <form action="">
             <div class="campo">
                 <label for="">Usuário:</label>
@@ -84,16 +86,31 @@
                 <input type="email" required>
             </div>
                 <!--Card Empresa-->
+            <div class="campo">
                 <div class="formEmpresa">
                     <section id="empresaCardForm">
                         <div class="campo">
-                            <label for="a">Material e Valores</label>
-                            <div id="a">
-                                B
+                            <label for="">Material e Valores</label>
+                            <div id="squareMaterial">
+                                <!--Quadradinho dos produtos-->
+                                <div class="materialContainer">
+                                    <div class="componentMaterial dentifyMaterial">
+                                        <h2>Material</h2>
+                                        <span>Papelão</span>
+                                    </div>
+                                    <div class="componentMaterial">
+                                        <h2>Valor</h2>
+                                        <input type="number" min="1">
+                                        <span>R$ por KG</span>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </section>
                 </div>
+            </div>
+                
                 <!--Card Empresa-->
             <div class="campo">
                 <input type="submit" value="Criar conta">

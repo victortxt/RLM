@@ -13,13 +13,13 @@
 .btn{
     width: 30%;
     height: 80%;
-    border: 3px solid black;
-    background-color: white;
-    transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 3px solid var(--blackColor);
+    background-color: var(--whiteColor);
+    transition: all .4s var(--animation);
 }
 
 .btn:hover, .btn:checked{
-    transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all .4s var(--animation);
     background-color: var(--principalColor);
 }
 
@@ -30,11 +30,36 @@
 
 .campo > label{
     font-size: 1.3em;
+    background-color: var(--blackColor);
+    color: var(--principalColor);
+    margin-top: 5px;
+    width: 200px;
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 .campo > input[type="text"], input[type="email"]{
-    padding: 5px;
+    padding: 15px;
     box-sizing: border-box;
-    border: 4px solid black;
+    border: 3px solid var(--blackColor);
+}
+/*Empresa*/
+#squareMaterial {
+    height: 200px;
+    border: 3px solid var(--blackColor);
+}
 
+.materialContainer{
+    background-color: var(--principalColor);
+    margin: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.componentMaterial{
+    display: flex;
+    align-items: end;
 }

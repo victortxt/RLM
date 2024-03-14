@@ -8,6 +8,7 @@
 
 :root{
     --blackColor: black;
+    --whiteColor: white;
     --principalColor: #2AB64D;
     --greyColor: #737373;
     --animation: cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -55,7 +56,7 @@ main{
 
 .textBasic{
     color: var(--greyColor);
-    font-size: 0.8em;
+    font-size: 1.3em;
 }
 
 nav{
