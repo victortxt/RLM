@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../CSS/geral/geral.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="../../JS/login.js" defer></script>
     <title>RLM - criar conta</title>
 </head>
 <body>
@@ -26,21 +27,23 @@
         </nav>
     </header>
     <main>
-        <h2 class="textBasic">Selecione quem você é:</h2>
+        <h2 class="textBasic">
+            <span class="destaque">xxx</span>, ...
+        </h2>
 
         <!--MOBILE SCREEN-->
         <div class="mobile">
             <section class="buttonsLine">
-                    <button>
-                        a
+                    <button class="btn defaultControl">
+                        Coletor
                     </button>
     
-                    <button>
-                        a
+                    <button class="btn defaultControl">
+                        Acumulador
                     </button>
     
-                    <button>
-                        a
+                    <button class="btn">
+                        Empresa
                     </button>
             </section>
         </div>
@@ -67,8 +70,6 @@
                 </div>
             </section>
         </div>
-        <p><span id="selectName"></span> Explicar função</p>
-
         <form action="">
             <div class="campo">
                 <label for="">Usuário:</label>
@@ -83,14 +84,16 @@
                 <input type="email" required>
             </div>
                 <!--Card Empresa-->
-                <section id="empresaCardForm">
-                    <div class="campo">
-                        <label for="a">Material e Valores</label>
-                        <div id="a">
-                            B
+                <div class="formEmpresa">
+                    <section id="empresaCardForm">
+                        <div class="campo">
+                            <label for="a">Material e Valores</label>
+                            <div id="a">
+                                B
+                            </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
                 <!--Card Empresa-->
             <div class="campo">
                 <input type="submit" value="Criar conta">
