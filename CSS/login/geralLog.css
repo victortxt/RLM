@@ -16,11 +16,14 @@
     border: 3px solid var(--blackColor);
     background-color: var(--whiteColor);
     transition: all .4s var(--animation);
+    cursor: pointer;
 }
 
 .btn:hover, .btn:checked{
     transition: all .4s var(--animation);
     background-color: var(--principalColor);
+    color: var(--whiteColor);
+    border: 3px solid var(--whiteColor);
 }
 
 .campo{
@@ -87,7 +90,9 @@ input[type="submit"]{
     font-size: 1.5em;
     color: white;
     background-color: var(--principalColor);
+    transition: all .4s var(--animation);
     border: none;
+    cursor: pointer;
 }
 
 
@@ -95,5 +100,10 @@ input[type="submit"]:hover{
     background-color: var(--whiteColor);
     color: var(--principalColor);
     transition: all .4s var(--animation);
-    border: 3px solid var(--principalColor);
+    cursor: pointer;
+}
+
+.changeWay{
+    cursor: pointer;
+    text-decoration: underline;
 }
