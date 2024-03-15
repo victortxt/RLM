@@ -21,6 +21,7 @@
         </div>
         <nav>
             <ul>
+                <li id="closeMenu">X</li>
                 <li>Opt 1</li>
                 <li>Opt 2</li>
                 <li>Opt 3</li>
@@ -28,129 +29,120 @@
         </nav>
     </header>
     <main>
-        <section class="container">
-            <h2 class="textBasic">Selecione quem é você</h2>
-
-            <!--MOBILE SCREEN-->
-            <div class="mobile">
-                <section class="buttonsLine">
-                        <button class="btn defaultControl">
-                            Coletor
-                        </button>
         
-                        <button class="btn defaultControl">
-                            Acumulador
-                        </button>
-        
-                        <button class="btn">
-                            Empresa
-                        </button>
-                </section>
-            </div>
-    
-            <!--DESKTOP SCREEN-->
-            <div class="desktop">
-                <section class="buttonsLine">
-                    <div class="SquareEffect defaultControl">
-                        <button>
-                            a
-                        </button>
-                    </div>
-        
-                    <div class="SquareEffect defaultControl">
-                        <button>
-                            a
-                        </button>
-                    </div>
-        
-                    <div class="SquareEffect">
-                        <button>
-                            a
-                        </button>
-                    </div>
-                </section>
-            </div>
-            <h2 class="textBasic">
-                <span class="destaque">xxx</span>, ...
-            </h2>
-            <form action="">
-                <div class="campo">
-                    <label for="">Usuário:</label>
-                    <input type="text" class="inputContent" >
+            <section id="containerMain">
+                <h2 class="textBasic">Selecione quem é você</h2>
+                <!--MOBILE SCREEN-->
+                <div class="mobile">
+                    <section class="buttonsLine">
+                            <button class="btn defaultControl">
+                                Coletor
+                            </button>
+                            <button class="btn defaultControl">
+                                Acumulador
+                            </button>
+                            <button class="btn">
+                                Empresa
+                            </button>
+                    </section>
                 </div>
-                <div class="campo">
-                    <label for="">Senha:</label>
-                    <input type="text" class="inputContent" >
-                </div>
-                <div class="campo" id="emailBoxText">
-                    <label for="">Email:</label>
-                    <input type="email" class="inputContent"  >
-                </div>
-                    <!--Card Empresa-->
-                    <div class="formEmpresa" style="display: none;">
-                        <div class="campo">
-                        <section id="empresaCardForm">
-                            <div class="campo">
-                                <label for="">Material e Valores</label>
-                                <div id="squareMaterial">
-                                    <!--Quadradinho dos produtos-->
-                                    <div class="materialContainer">
-                                        <div class="componentMaterial">
-                                            <h2>Material Papelão</h2>
-                                            <input type="checkbox" name="" id="" class="materialOpt">
-                                        </div>
-                                        <div class="componentMaterial">
-                                            <h2>Valor</h2>
-                                            <input type="number" min="1" class="materialValue">
-                                            <span>R$ por KG</span>
-                                        </div>
-                                    </div>
-    
-                                    <div class="materialContainer">
-                                        <div class="componentMaterial">
-                                            <h2>Material Papelão</h2>
-                                            <input type="checkbox" name="" id="">
-                                        </div>
-                                        <div class="componentMaterial">
-                                            <h2>Valor</h2>
-                                            <input type="number" min="1">
-                                            <span>R$ por KG</span>
-                                        </div>
-                                    </div>
-    
-                                    <div class="materialContainer">
-                                        <div class="componentMaterial">
-                                            <h2>Material Papelão</h2>
-                                            <input type="checkbox" name="" id="">
-                                        </div>
-                                        <div class="componentMaterial">
-                                            <h2>Valor</h2>
-                                            <input type="number" min="1">
-                                            <span>R$ por KG</span>
-                                        </div>
-                                    </div>
-                                    
-                                    
-    
-                                </div>
-                            </div>
+                <!--DESKTOP SCREEN-->
+                <div class="desktop">
+                    <section class="buttonsLine">
+                        <div class="SquareEffect defaultControl">
+                            <button>
+                                a
+                            </button>
+                        </div>
+                        <div class="SquareEffect defaultControl">
+                            <button>
+                                a
+                            </button>
+                        </div>
+                        <div class="SquareEffect">
+                            <button>
+                                a
+                            </button>
                         </div>
                     </section>
                 </div>
-                    
-                    <!--Card Empresa-->
-                <div class="campo" id="containerCreateAcount">
-                    <input type="submit" value="Criar conta" id="createSub">
-                    <span class="textBasic changeWay" id="login">Já tenho conta</span>
-                </div>
-                <div class="campo" id="containerLoginAcount"  style="display:none">
-                    <input type="submit" value="Entrar" id="loginSub">
-                    <span class="textBasic changeWay"  id="create">Criar Conta</span>
-                </div>
-
-            </form>
-        </section>
-        <section class="container squareBonecos">
+                <h2 class="textBasic">
+                    <span class="destaque">xxx</span>, ...
+                </h2>
+                <form action="">
+                    <div class="campo">
+                        <label for="">Usuário:</label>
+                        <input type="text" class="inputContent" >
+                    </div>
+                    <div class="campo">
+                        <label for="">Senha:</label>
+                        <input type="text" class="inputContent" >
+                    </div>
+                    <div class="campo" id="emailBoxText">
+                        <label for="">Email:</label>
+                        <input type="email" class="inputContent"  >
+                    </div>
+                        <!--Card Empresa-->
+                        <div class="formEmpresa" style="display: none;">
+                            <div class="campo">
+                            <section id="empresaCardForm">
+                                <div class="campo">
+                                    <label for="">Material e Valores</label>
+                                    <div id="squareMaterial">
+                                        <!--Quadradinho dos produtos-->
+                                        <div class="materialContainer">
+                                            <div class="componentMaterial">
+                                                <h2>Material Papelão</h2>
+                                                <input type="checkbox" name="" id="" class="materialOpt">
+                                            </div>
+                                            <div class="componentMaterial">
+                                                <h2>Valor</h2>
+                                                <input type="number" min="1" class="materialValue">
+                                                <span>R$ por KG</span>
+                                            </div>
+                                        </div>
+                                        <div class="materialContainer">
+                                            <div class="componentMaterial">
+                                                <h2>Material Papelão</h2>
+                                                <input type="checkbox" name="" id="">
+                                            </div>
+                                            <div class="componentMaterial">
+                                                <h2>Valor</h2>
+                                                <input type="number" min="1">
+                                                <span>R$ por KG</span>
+                                            </div>
+                                        </div>
+                                        <div class="materialContainer">
+                                            <div class="componentMaterial">
+                                                <h2>Material Papelão</h2>
+                                                <input type="checkbox" name="" id="">
+                                            </div>
+                                            <div class="componentMaterial">
+                                                <h2>Valor</h2>
+                                                <input type="number" min="1">
+                                                <span>R$ por KG</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+                    </div>
+                    </div>
+                    <div class="campo" id="containerCreateAcount">
+                        <input type="submit" value="Criar conta" id="createSub">
+                        <span class="textBasic changeWay" id="login">Já tenho conta</span>
+                    </div>
+                    <div class="campo" id="containerLoginAcount"  style="display:none">
+                        <input type="submit" value="Entrar" id="loginSub">
+                        <span class="textBasic changeWay"  id="create">Criar Conta</span>
+                    </div>
+                
+                        <!--Card Empresa-->
+                        
+                </form>
+                
+            </section>
+        <section id="squareBonecos">
             <h2>Teste</h2>
 
         </section>

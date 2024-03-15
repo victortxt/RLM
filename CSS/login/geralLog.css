@@ -107,3 +107,34 @@ input[type="submit"]:hover{
     cursor: pointer;
     text-decoration: underline;
 }
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 500px) {
+    main{
+        margin-top: 90px;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .mobile{
+        display: none;
+    }
+
+    #containerMain{
+        width: 60%;
+        background-color: #D9D9D9;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    #squareBonecos{
+        display: flex;
+        flex-direction: column;
+    }
+}
