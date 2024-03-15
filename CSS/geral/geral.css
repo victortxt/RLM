@@ -14,10 +14,6 @@
     --animation: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.none{
-    display: none;
-}
-
 .desktop{
     display: none;
 }
@@ -44,6 +40,7 @@ h1{
 .containerMenu{
     background-color: var(--principalColor);
     text-align: center;
+    cursor: pointer;
 }
 
 .btnMenu{
@@ -65,7 +62,7 @@ main{
     font-size: 1.3em;
 }
 
-.navBar{
+nav{
     background-color: var(--blackColor);
     color: var(--principalColor);
     font-weight: normal;
@@ -73,13 +70,23 @@ main{
     box-sizing: border-box;
     display: none;
 }
+nav> ul > li:nth-child(1){
+    border-top: 3px solid var(--greyColor);
+}
 
-.navBar> ul > li {
+nav> ul > li {
     list-style: none;
     padding: 10px;
     box-sizing: border-box;
     text-align: center;
     border-bottom: 3px solid var(--greyColor);
+    cursor: pointer;
+}
+
+nav> ul > li:hover{
+    background-color: var(--principalColor);
+    color: var(--blackColor);
+    transition: all .4s var(--animation);
 }
 
 .destaque{
