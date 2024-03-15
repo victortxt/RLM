@@ -113,10 +113,18 @@ form{
     flex-direction: column;
 }
 
+.btnComputer{
+    width: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 0.8em;
+    width: 200px;
+}
+
 @media screen and (min-width: 500px) {
     main{
         margin-top: 90px;
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -136,5 +144,13 @@ form{
     #squareBonecos{
         display: flex;
         flex-direction: column;
+    }
+    
+    .buttonsLine{
+        width: 100%;
+    }
+
+    .SquareEffect{
+        background-color: red;
     }
 }
