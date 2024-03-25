@@ -1,8 +1,50 @@
 const buttonLog = document.querySelector('#login');
 const buttonCreate = document.querySelector('#create');
+const buttonBtnOption = document.querySelectorAll('.btn')
+const lineBtn = document.querySelectorAll('.buttonsLine')
+document.querySelector('.selectedInput').style.display = 'none'
 let form = document.querySelector('form')
 let urlForm = ''
 
+
+function submitForm(){
+    let state
+    document.querySelectorAll('.inputContent').forEach((e) => {
+        if(e.value != ''){
+            state = true
+        }else{
+            state = false
+        }
+    })
+    if(state === true){
+        document.querySelector('form').submit()
+    }else{
+        alert('ERRO: verifique se os dados estão preenchidos')
+    }
+}
+
+document.querySelector('#createSub').addEventListener('click', (e) => {
+    e.preventDefault()
+    submitForm()
+})
+document.querySelector('#loginSub').addEventListener('click', (e) => {
+    e.preventDefault()
+    submitForm()
+})
+
+
+buttonBtnOption.forEach(e => {
+    e.addEventListener('click', (element) => {
+    document.querySelector('.selectedInput').style.display = 'flex'
+        buttonBtnOption.forEach(e => {
+            e.parentNode.style.background = 'var(--whiteColor)'
+        })
+        let btnTouched = element.target
+        btnTouched.parentNode.style.background = 'var(--principalColor)'
+        document.querySelector('.selectedInput').querySelector('input').value = btnTouched.textContent.trim()
+    })
+    
+})
 
 buttonLog.addEventListener('click', () => {
     document.querySelector('#containerCreateAcount').style.display = 'none'
@@ -12,6 +54,8 @@ buttonLog.addEventListener('click', () => {
     document.querySelector('.btnLineDesk').style.display = 'none';
     document.querySelector('.noneTextBasic').textContent = 'Área de login'
     document.querySelector('.textIndentify').style.display = 'none';
+    document.querySelector('.selectedInput').style.display = 'none'
+
     urlForm = 'a'
     form.action = urlForm
 })
