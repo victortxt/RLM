@@ -88,6 +88,7 @@ nav> ul > li {
     text-align: center;
     cursor: pointer;
     text-decoration: underline;
+    border-bottom: 3px solid var(--blackColor) ;
 }
 
 nav> ul > li:hover{

@@ -39,8 +39,13 @@ buttonBtnOption.forEach(e => {
             e.parentNode.style.background = 'var(--whiteColor)'
         })
         let btnTouched = element.target
-        btnTouched.parentNode.style.background = 'var(--principalColor)'
-        document.querySelector('.selectedInput').querySelector('input').value = btnTouched.textContent.trim()
+        if(document.querySelector('.SquareEffect')){
+            btnTouched.parentNode.style.background = 'var(--principalColor)'
+            document.querySelector('.selectedInput').querySelector('input').value = btnTouched.textContent.trim()
+        }else{
+            btnTouched.style.background = 'var(--principalColor)'
+        }
+        
     })
     
 })
