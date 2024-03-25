@@ -36,10 +36,15 @@ buttonBtnOption.forEach(e => {
     e.addEventListener('click', (element) => {
     document.querySelector('.selectedInput').style.display = 'flex'
         buttonBtnOption.forEach(e => {
-            e.parentNode.style.background = 'var(--whiteColor)'
+            if(document.querySelector('.SquareEffect').style.display === 'block'){
+                e.parentNode.style.background = 'var(--whiteColor)'
+            }else{
+                buttonBtnOption.style.background = 'var(--whiteColor)'
+            }
         })
         let btnTouched = element.target
-        if(document.querySelector('.SquareEffect')){
+        if(document.querySelector('.SquareEffect').style.display === 'block'){
+            console.log('este')
             btnTouched.parentNode.style.background = 'var(--principalColor)'
             document.querySelector('.selectedInput').querySelector('input').value = btnTouched.textContent.trim()
         }else{
