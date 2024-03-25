@@ -4,7 +4,7 @@ const buttonBtnOption = document.querySelectorAll('.btn')
 const lineBtn = document.querySelectorAll('.buttonsLine')
 let form = document.querySelector('form')
 let urlForm = ''
-
+let urlImg = ''
 
 function submitForm(){
     let state
@@ -42,6 +42,18 @@ buttonBtnOption.forEach(e => {
         if(btnTouched.parentNode.className === 'SquareEffect'){
             btnTouched.parentNode.style.background = 'var(--principalColor)'
             document.querySelector('.selectedInput').querySelector('input').value = btnTouched.textContent.trim()
+        }
+
+        switch(btnTouched.textContent.trim()){
+            case 'Coletor':
+                urlImg = './...'
+            break
+            case 'Acumulador':
+                urlImg = './...'
+            break
+            case 'Empresa':
+                urlImg = './...'
+            break
         }
         
     })

@@ -108,13 +108,35 @@ form{
     display: none;
 }
 
+#imgBackground{
+    width: 40%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 888;
+    height: 100%;
+    background: linear-gradient(120deg, rgb(0, 255, 157), rgb(11, 122, 59));
+    transform: translateY(90px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-top: 200px;
+}
+
+#imgBackground h2{
+    font-size: 3em;
+    font-weight: bolder;
+    color: var(--whiteColor);
+}
+
 @media screen and (min-width: 1200px) {
     main{
         margin-top: 90px;
         min-height: 100vh;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         margin: 0;
         padding: 0;
     }
