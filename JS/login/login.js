@@ -2,7 +2,6 @@ const buttonLog = document.querySelector('#login');
 const buttonCreate = document.querySelector('#create');
 const buttonBtnOption = document.querySelectorAll('.btn')
 const lineBtn = document.querySelectorAll('.buttonsLine')
-document.querySelector('.selectedInput').style.display = 'none'
 let form = document.querySelector('form')
 let urlForm = ''
 
@@ -10,7 +9,7 @@ let urlForm = ''
 function submitForm(){
     let state
     document.querySelectorAll('.inputContent').forEach((e) => {
-        if(e.value != ''){
+        if(e.value != '' && document.querySelector('.selectedInput').querySelector('input').value != ''){
             state = true
         }else{
             state = false
@@ -68,6 +67,7 @@ buttonCreate.addEventListener('click', () => {
     document.querySelector('.btnLineDesk').style.display = 'flex';
     document.querySelector('.noneTextBasic').textContent = 'Selecione quem é você';
     document.querySelector('.textIndentify').style.display = 'block';
+    document.querySelector('.selectedInput').style.display = 'flex'
     urlForm = 'b'
     form.action = urlForm
 
