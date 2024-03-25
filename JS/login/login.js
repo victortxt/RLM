@@ -42,6 +42,8 @@ buttonBtnOption.forEach(e => {
         if(btnTouched.parentNode.className === 'SquareEffect'){
             btnTouched.parentNode.style.background = 'var(--principalColor)'
             document.querySelector('.selectedInput').querySelector('input').value = btnTouched.textContent.trim()
+            document.querySelector('#personSelected').innerHTML = btnTouched.textContent.trim()
+            document.querySelector('#personSelected').style.display = 'block'
         }
 
         switch(btnTouched.textContent.trim()){
