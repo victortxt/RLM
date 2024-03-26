@@ -117,10 +117,6 @@ nav> ul > li:hover{
     transition: all .4s var(--animation);
 }
 
-nav> ul > li > a {
-    color: var(--whiteColor);
-}
-
 .destaque{
     color: var(--principalColor);
     font-weight: bold;

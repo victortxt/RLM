@@ -4,7 +4,7 @@ const buttonBtnOption = document.querySelectorAll('.btn')
 const lineBtn = document.querySelectorAll('.buttonsLine')
 let form = document.querySelector('form')
 let urlForm = ''
-let urlImg = ''
+
 
 function submitForm(){
     let state
@@ -39,9 +39,10 @@ buttonBtnOption.forEach(e => {
             e.parentNode.style.background = 'var(--whiteColor)'
         })
         let btnTouched = element.target
-        if(btnTouched.parentNode.className === 'SquareEffect'){
+        if(document.querySelector('.SquareEffect')){
             btnTouched.parentNode.style.background = 'var(--principalColor)'
             document.querySelector('.selectedInput').querySelector('input').value = btnTouched.textContent.trim()
+<<<<<<< HEAD
         }
 
         switch(btnTouched.textContent.trim()){
@@ -54,6 +55,10 @@ buttonBtnOption.forEach(e => {
             case 'Empresa':
                 urlImg = './...'
             break
+=======
+        }else{
+            btnTouched.style.background = 'var(--principalColor)'
+>>>>>>> parent of 8c39887 (commit)
         }
         
     })
