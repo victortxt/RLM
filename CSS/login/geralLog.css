@@ -128,7 +128,12 @@ form{
 #imgBackground h2{
     font-size: 3em;
     font-weight: bolder;
-    color: var(--whiteColor);
+    color: var(--principalColor);
+    background-color: var(--whiteColor);
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -188,5 +193,4 @@ form{
     #imgBackground{
         display: flex;
     }
-    
 }

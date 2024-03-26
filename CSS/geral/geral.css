@@ -80,14 +80,15 @@ nav{
     width: 100%;
     box-sizing: border-box;
     display: none;
-    position: absolute;
+    position: fixed;
     width: 70%;
     height: 100vh;
     right: 0;
+    top: 0;
 }
 
 nav> ul > li:nth-child(2){
-    border-top: 3px solid var(--blackColor) ;
+    border-top: 3px solid var(--blackColor);
 }
 
 nav> ul > li {
@@ -100,9 +101,18 @@ nav> ul > li {
     border-bottom: 3px solid var(--blackColor) ;
 }
 
+nav> ul > li{
+    list-style: none;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: underline;
+    border-bottom: 3px solid var(--blackColor) ;
+}
+
 nav> ul > li:hover{
     background-color: var(--blackColor);
-    color: var(--principalColor);
     transition: all .4s var(--animation);
 }
 
@@ -130,53 +140,8 @@ nav> ul > li:hover{
         box-sizing: border-box;
     }
 
-    nav{
-        position: fixed;
-        height: 100%;
-        width: 30vw;
-        right: 0px;
-        top: 0px;
-    }
-    
-    
     .desktop{
         display: block;
-    }
-
-    .menu{
-        background-color: var(--verde);
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content:center;
-        position: relative;
-    }
-
-    .menu > span{
-        font-size: 3em;
-        color: black;
-    }
-
-    nav{
-        position: absolute;
-        top: 100%;
-        width: 100%;
-        display: none;
-    }
-
-    nav > ul{
-        background-color: green;
-        text-align: center;
-        box-sizing: border-box;
-    }
-
-    nav > ul > li{
-        list-style: none;
-        border-bottom: 3px solid black;
-        width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
-        text-align: center;
     }
 
     main{
@@ -226,14 +191,5 @@ nav> ul > li:hover{
         box-sizing: border-box;
         cursor: pointer;
 
-    }
-
-    #template{
-        width: 40%;
-        height: 100vh;
-        background-color: red;
-        position: fixed;
-        right: 0px;
-        display: none;
     }
 }

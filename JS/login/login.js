@@ -5,6 +5,9 @@ const lineBtn = document.querySelectorAll('.buttonsLine')
 let form = document.querySelector('form')
 let urlForm = ''
 
+document.querySelector('#titleSelected').style.display = 'none'
+
+
 
 function submitForm(){
     let state
@@ -42,6 +45,10 @@ buttonBtnOption.forEach(e => {
         if(document.querySelector('.SquareEffect')){
             btnTouched.parentNode.style.background = 'var(--principalColor)'
             document.querySelector('.selectedInput').querySelector('input').value = btnTouched.textContent.trim()
+            document.querySelector('#titleSelected').innerHTML = btnTouched.textContent.trim()
+            document.querySelector('#titleSelected').style.display = 'block'
+
+
         }else{
             btnTouched.style.background = 'var(--principalColor)'
         }
@@ -57,6 +64,7 @@ buttonBtnOption.forEach(e => {
                 urlImg = './...'
             break
         }
+
         
     })
     
