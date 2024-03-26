@@ -42,7 +42,8 @@ buttonBtnOption.forEach(e => {
         if(document.querySelector('.SquareEffect')){
             btnTouched.parentNode.style.background = 'var(--principalColor)'
             document.querySelector('.selectedInput').querySelector('input').value = btnTouched.textContent.trim()
-<<<<<<< HEAD
+        }else{
+            btnTouched.style.background = 'var(--principalColor)'
         }
 
         switch(btnTouched.textContent.trim()){
@@ -55,10 +56,6 @@ buttonBtnOption.forEach(e => {
             case 'Empresa':
                 urlImg = './...'
             break
-=======
-        }else{
-            btnTouched.style.background = 'var(--principalColor)'
->>>>>>> parent of 8c39887 (commit)
         }
         
     })
