@@ -141,100 +141,99 @@ nav> ul > li:hover{
     
     .desktop{
         display: block;
-}
+    }
 
-.menu{
-    background-color: var(--verde);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    position: relative;
-}
+    .menu{
+        background-color: var(--verde);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        position: relative;
+    }
 
-.menu > span{
-    font-size: 3em;
-    color: black;
-}
+    .menu > span{
+        font-size: 3em;
+        color: black;
+    }
 
-nav{
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    display: none;
-}
+    nav{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        display: none;
+    }
 
-nav > ul{
-    background-color: green;
-    text-align: center;
-    box-sizing: border-box;
-}
+    nav > ul{
+        background-color: green;
+        text-align: center;
+        box-sizing: border-box;
+    }
 
-nav > ul > li{
-    list-style: none;
-    border-bottom: 3px solid black;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
-}
+    nav > ul > li{
+        list-style: none;
+        border-bottom: 3px solid black;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
 
-main{
-    padding: 15px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-}
+    main{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+    }
 
-.textGrey{
-    color: var(--cinza);
-    font-style: italic;
-    font-size: small;
-    font-weight: bold;
-    font-size: 1.5em;
-}
+    .textGrey{
+        color: var(--cinza);
+        font-style: italic;
+        font-size: small;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
 
-.optionBtnPeople{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 100px;
-    box-sizing: border-box;
-    margin-bottom: 80px
+    .optionBtnPeople{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100px;
+        box-sizing: border-box;
+        margin-bottom: 80px
 
-}
+    }
 
-.optionBtnPeople > .designBtn{
-    width: 150px;
-    height: 70%;
-    margin: 10px;
-    background-color: white;
-    border: 5px solid black;
-    position: relative;
-}
+    .optionBtnPeople > .designBtn{
+        width: 150px;
+        height: 70%;
+        margin: 10px;
+        background-color: white;
+        border: 5px solid black;
+        position: relative;
+    }
 
-.designBtn > button{
-    position: absolute;
-    left: 50%;
-    bottom: 30%;
-    width: 100%;
-    height: 100%;
-    transform: translate(-30%, 60%);
-    border-radius: none;
-    background-color: white;
-    border: 5px solid black;
-    font-weight: bold;
-    box-sizing: border-box;
-    cursor: pointer;
+    .designBtn > button{
+        position: absolute;
+        left: 50%;
+        bottom: 30%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-30%, 60%);
+        border-radius: none;
+        background-color: white;
+        border: 5px solid black;
+        font-weight: bold;
+        box-sizing: border-box;
+        cursor: pointer;
 
-}
+    }
 
-#template{
-    width: 40%;
-    height: 100vh;
-    background-color: red;
-    position: fixed;
-    right: 0px;
-    display: none;
-}
+    #template{
+        width: 40%;
+        height: 100vh;
+        background-color: red;
+        position: fixed;
+        right: 0px;
+        display: none;
+    }
 }
