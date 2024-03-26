@@ -67,6 +67,7 @@ header{
     top: 0;
     left: 0;
     z-index: 999;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.715);
 }
 
 h1{
@@ -101,6 +102,10 @@ nav{
     display: none;
 }
 
+nav> ul > li:nth-child(2){
+    border-top: 3px solid var(--blackColor);
+}
+
 nav> ul > li {
     list-style: none;
     padding: 10px;
@@ -108,7 +113,7 @@ nav> ul > li {
     text-align: center;
     cursor: pointer;
     text-decoration: underline;
-    border-bottom: 3px solid var(--blackColor) ;
+    border-bottom: 3px solid var(--blackColor);
 }
 
 nav> ul > li:hover{
@@ -117,15 +122,35 @@ nav> ul > li:hover{
     transition: all .4s var(--animation);
 }
 
+nav> ul > li > a {
+    color: var(--whiteColor);
+}
+
 .destaque{
     color: var(--principalColor);
     font-weight: bold;
+}
+
+.desktop{
+    display: none;
+}
+
+.mobile{
+    display: none;
 }
 
 @media screen and (min-width: 1200px) {
 
     header{
         height: 90px;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .desktop{
+        display: block;
     }
     
     #menuBtn{
