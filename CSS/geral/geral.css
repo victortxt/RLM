@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+<<<<<<< Updated upstream
+=======
+
+:root{
+    --header: black;
+    --verde: #2AB64D;
+    --cinza: grey;
+}
+>>>>>>> Stashed changes
 
 *{
     font-family:Lato;
@@ -6,6 +15,7 @@
     padding: 0px;
 }
 
+<<<<<<< Updated upstream
 :root{
     --blackColor: black;
     --whiteColor: white;
@@ -37,10 +47,20 @@
 
 header{
     background-color: var(--blackColor);
+=======
+header{
+    background-color: var(--header);
+    height: 150px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    color: white;
+>>>>>>> Stashed changes
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+<<<<<<< Updated upstream
     box-sizing: border-box;
     position: fixed;
     width: 100%;
@@ -132,5 +152,130 @@ nav> ul > li:hover{
     
     .desktop{
         display: block;
+=======
+}
+
+.cardHead{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardHead > h1{
+    font-size: 2.5em;
+}
+
+.menu{
+    background-color: var(--verde);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position: relative;
+}
+
+.menu > span{
+    font-size: 3em;
+    color: black;
+}
+
+nav{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    display: none;
+}
+
+nav > ul{
+    background-color: green;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+nav > ul > li{
+    list-style: none;
+    border-bottom: 3px solid black;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+main{
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.textGrey{
+    color: var(--cinza);
+    font-style: italic;
+    font-size: small;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.optionBtnPeople{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    box-sizing: border-box;
+    margin-bottom: 80px
+
+}
+
+.optionBtnPeople > .designBtn{
+    width: 150px;
+    height: 70%;
+    margin: 10px;
+    background-color: white;
+    border: 5px solid black;
+    position: relative;
+}
+
+.designBtn > button{
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-30%, 60%);
+    border-radius: none;
+    background-color: white;
+    border: 5px solid black;
+    font-weight: bold;
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
+
+#template{
+    width: 40%;
+    height: 100vh;
+    background-color: red;
+    position: fixed;
+    right: 0px;
+    display: none;
+}
+
+#MainContent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+
+    #MainContent{
+        width: 55%;
+    }
+
+    #template{
+        display: flex;
+>>>>>>> Stashed changes
     }
 }
