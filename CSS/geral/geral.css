@@ -74,12 +74,20 @@ h1{
 }
 
 nav{
-    background-color: var(--principalColor);
+    background-color: white;
     color: var(--blackColor);
     font-weight: normal;
     width: 100%;
     box-sizing: border-box;
     display: none;
+    position: absolute;
+    width: 70%;
+    height: 100vh;
+    right: 0;
+}
+
+nav> ul > li:nth-child(2){
+    border-top: 3px solid var(--blackColor) ;
 }
 
 nav> ul > li {

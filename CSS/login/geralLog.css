@@ -117,7 +117,7 @@ form{
     height: 100%;
     background: linear-gradient(120deg, rgb(0, 255, 157), rgb(11, 122, 59));
     transform: translateY(90px);
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -157,13 +157,6 @@ form{
         margin-top: 90px;
     }
 
-    
-
-    #squareBonecos{
-        display: flex;
-        flex-direction: column;
-    }
-    
     .buttonsLine{
         width: 100%;
         display: flex;
@@ -191,4 +184,9 @@ form{
         left: 20px;
         height: 100%;
     }
+
+    #imgBackground{
+        display: none;
+    }
+    
 }
