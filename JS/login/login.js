@@ -1,9 +1,20 @@
 const buttonLog = document.querySelector('#login');
 const buttonCreate = document.querySelector('#create');
+const btnOptions = document.querySelectorAll('.btn');
+let OptSelected = null
 let form = document.querySelector('form')
 let urlForm = ''
 
-
+btnOptions.forEach(e => {
+    e.addEventListener('click', (element) => {
+        btnOptions.forEach(i => {
+            i.parentNode.style.background = 'var(--whiteColor)'
+        })
+        let component = element.target.parentNode
+        component.style.background = 'var(--principalColor)'
+        OptSelected = component.textContent.trim();
+    })
+})
 buttonLog.addEventListener('click', () => {
     document.querySelector('#containerCreateAcount').style.display = 'none'
     document.querySelector('#containerLoginAcount').style.display = 'block'

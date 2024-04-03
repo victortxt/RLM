@@ -129,6 +129,9 @@ form{
     #squareBonecos{
         display: flex;
         flex-direction: column;
+        height: 900px;
+        width: 200px;
+        background-color: red;
     }
     
     .buttonsLine{
