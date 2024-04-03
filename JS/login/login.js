@@ -55,7 +55,7 @@ buttonBtnOption.forEach(e => {
 
         switch(btnTouched.textContent.trim()){
             case 'Coletor':
-                urlImg = './...'
+                urlImg = '../../img/IMG_7485.JPG'
             break
             case 'Acumulador':
                 urlImg = './...'
@@ -65,7 +65,7 @@ buttonBtnOption.forEach(e => {
             break
         }
 
-        
+        document.querySelector('#imgBackground').style.backgroundImage = `url(${urlImg})`        
     })
     
 })
