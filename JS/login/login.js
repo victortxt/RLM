@@ -58,10 +58,10 @@ buttonBtnOption.forEach(e => {
                 urlImg = '../../img/IMG_7485.JPG'
             break
             case 'Acumulador':
-                urlImg = './...'
+                urlImg = '../../img/IMG_7498.JPG'
             break
             case 'Empresa':
-                urlImg = './...'
+                urlImg = '../../img/IMG_7661.jpg'
             break
         }
 

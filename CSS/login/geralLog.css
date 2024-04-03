@@ -9,6 +9,11 @@ img{
     height: 100%;
 }
 
+body{
+    background: linear-gradient(120deg, rgb(35, 226, 233), rgb(6, 97, 100));
+
+}
+
 main{
     padding: 20px;
     box-sizing: border-box;
@@ -121,7 +126,6 @@ form{
     bottom: 0;
     z-index: 888;
     height: 100%;
-    background: linear-gradient(120deg, rgb(35, 226, 233), rgb(6, 97, 100));
     transform: translateY(90px);
     display: none;
     flex-direction: column;

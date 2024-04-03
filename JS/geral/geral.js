@@ -1,13 +1,13 @@
 //menu;
 
 const menu = document.querySelector('#menuBtn');
-let navbar = document.querySelector('#navBar')
+let navbar = document.querySelector('nav')
 const closeMenu = document.querySelector('#closeMenu')
-
+navbar.style.display = 'none'
 menu.addEventListener('click', () => {
-        document.querySelector('nav').style.display = 'flex'
+    navbar.style.display = 'flex'
 })
 
 document.querySelector('#closeMenu').addEventListener('click', () => {
-    document.querySelector('nav').style.display = 'none'
+    navbar.style.display = 'none'
 })
