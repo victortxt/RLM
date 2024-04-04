@@ -82,11 +82,10 @@ nav{
     background: linear-gradient(to bottom, black  , transparent 30%);
     color: var(--blackColor);
     font-weight: normal;
-    width: 100%;
     box-sizing: border-box;
     display: none;
     position: fixed;
-    width: 30%;
+    width: 80%;
     height: 100vh;
     right: 0;
     top: 0;
@@ -141,10 +140,16 @@ nav> ul > li > a{
     border: none;
 }
 
-@media screen and (min-width: 1200px) {
+
+
+@media screen and (min-width: 1000px) {
 
     header{
         height: 90px;
+    }
+
+    nav{
+        width: 30%;
     }
     
     #menuBtn{

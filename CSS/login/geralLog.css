@@ -10,8 +10,11 @@ img{
 }
 
 body{
-    background: linear-gradient(120deg, rgb(35, 226, 233), rgb(6, 97, 100));
+    background-color: white;    
+}
 
+.textIndentify{
+    height: 150px;
 }
 
 main{
@@ -153,7 +156,11 @@ form{
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
+    body{
+        background: linear-gradient(120deg, rgb(35, 226, 233), rgb(6, 97, 100));
+    }
+
     main{
         margin-top: 90px;
         min-height: 100vh;
@@ -209,5 +216,15 @@ form{
 
     #imgBackground{
         display: flex;
+    }
+
+    #imgBackground p {
+        text-align: center;
+        background-color: black;
+        padding: 20px;
+        box-sizing: border-box;
+        color: white;
+        margin-top: 220px;
+        width: 100%;
     }
 }

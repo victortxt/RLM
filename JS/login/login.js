@@ -2,9 +2,11 @@ const buttonLog = document.querySelector('#login');
 const buttonCreate = document.querySelector('#create');
 const buttonBtnOption = document.querySelectorAll('.btn')
 const lineBtn = document.querySelectorAll('.buttonsLine')
+let pCareer = document.querySelector('#textCareer')
 let form = document.querySelector('form')
 let urlForm = ''
-
+let textCareer = ""
+pCareer.style.display = 'none'
 document.querySelector('#titleSelected').style.display = 'none'
 
 
@@ -40,32 +42,40 @@ buttonBtnOption.forEach(e => {
     document.querySelector('.selectedInput').style.display = 'flex'
         buttonBtnOption.forEach(e => {
             e.parentNode.style.background = 'var(--whiteColor)'
+            
         })
         let btnTouched = element.target
         if(document.querySelector('.SquareEffect')){
-            btnTouched.parentNode.style.background = 'var(--principalColor)'
-            document.querySelector('.selectedInput').querySelector('input').value = btnTouched.textContent.trim()
-            document.querySelector('#titleSelected').innerHTML = btnTouched.textContent.trim()
-            document.querySelector('#titleSelected').style.display = 'block'
-
+            if(e.parentNode.className === 'SquareEffect'){
+                btnTouched.parentNode.style.background = 'var(--principalColor)'
+                document.querySelector('.selectedInput').querySelector('input').value = btnTouched.textContent.trim()
+                document.querySelector('#titleSelected').innerHTML = btnTouched.textContent.trim()
+                document.querySelector('#titleSelected').style.display = 'block'
+            }
 
         }else{
             btnTouched.style.background = 'var(--principalColor)'
         }
-
         switch(btnTouched.textContent.trim()){
             case 'Coletor':
                 urlImg = '../../img/IMG_7485.JPG'
+                textCareer = 'Coletores, vocês são responsáveis em garantir a sustentabilidade do meio ambiente através de um trabalho de coletar o lixo e entregar para uma empresa.'
             break
             case 'Acumulador':
                 urlImg = '../../img/IMG_7498.JPG'
+                textCareer = 'Acumuladores, vocês são responsáveis em armazenar materiais e disponibilizar os produtos recicláveis para os coletores.'
             break
             case 'Empresa':
                 urlImg = '../../img/IMG_7661.jpg'
+                textCareer = 'Empresas, vocês são responsáveis na monetização e na obtenção dos materiais.'
             break
         }
+        pCareer.style.display = 'block'
+        document.querySelector('#imgBackground').style.backgroundImage = `url(${urlImg})`
 
-        document.querySelector('#imgBackground').style.backgroundImage = `url(${urlImg})`        
+        document.querySelector('.textIndentify').textContent = textCareer
+        //
+        pCareer.textContent =  textCareer     
     })
     
 })
@@ -79,6 +89,7 @@ buttonLog.addEventListener('click', () => {
     document.querySelector('.noneTextBasic').textContent = 'Área de login'
     document.querySelector('.textIndentify').style.display = 'none';
     document.querySelector('.selectedInput').style.display = 'none'
+    document.querySelector('#imgBackground').style.display = 'none'
 
     urlForm = 'a'
     form.action = urlForm
@@ -93,6 +104,7 @@ buttonCreate.addEventListener('click', () => {
     document.querySelector('.noneTextBasic').textContent = 'Selecione quem é você';
     document.querySelector('.textIndentify').style.display = 'block';
     document.querySelector('.selectedInput').style.display = 'flex'
+    document.querySelector('#imgBackground').style.display = 'flex'
     urlForm = 'b'
     form.action = urlForm
 
