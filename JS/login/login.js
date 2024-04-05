@@ -48,8 +48,6 @@ buttonBtnOption.forEach(e => {
         if(document.querySelector('.SquareEffect')){
             if(e.parentNode.className === 'SquareEffect'){
                 btnTouched.parentNode.style.background = 'var(--principalColor)'
-                document.querySelector('.selectedInput').querySelector('input').value = btnTouched.textContent.trim()
-                document.querySelector('#titleSelected').innerHTML = btnTouched.textContent.trim()
                 document.querySelector('#titleSelected').style.display = 'block'
             }
 
@@ -74,6 +72,7 @@ buttonBtnOption.forEach(e => {
         document.querySelector('#imgBackground').style.backgroundImage = `url(${urlImg})`
 
         document.querySelector('.textIndentify').textContent = textCareer
+        document.querySelector('.inputContent').value = btnTouched.textContent.trim()
         //
         pCareer.textContent =  textCareer     
     })
