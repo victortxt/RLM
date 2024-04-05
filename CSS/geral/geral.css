@@ -37,21 +37,29 @@ button, div, input[type="submit"] {
 
 header{
     background-color: var(--blackColor);
-    height: 150px;
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
     color: white;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     box-sizing: border-box;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 999;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 h1{
@@ -64,6 +72,8 @@ h1{
     background-color: var(--principalColor);
     text-align: center;
     cursor: pointer;
+    border-radius: 0px;
+    height: 50px;
 }
 
 .btnMenu{
@@ -71,6 +81,8 @@ h1{
     font-size: 4em;
     padding: 15px;
     border: none;
+    box-sizing: border-box;
+    border-radius: 0px;
 }
 
 .textBasic{
@@ -93,6 +105,7 @@ nav{
     align-items: center;
     justify-content: baseline;
     flex-direction: column;
+    z-index: 999;
 }
 
 nav > ul{
@@ -144,10 +157,6 @@ nav> ul > li > a{
 
 @media screen and (min-width: 1000px) {
 
-    header{
-        height: 90px;
-    }
-
     nav{
         width: 30%;
     }
@@ -158,13 +167,6 @@ nav> ul > li > a{
         justify-content: center;
         width: 50px;
 
-    }
-
-    header{
-        display: flex;
-        flex-direction: row;
-        padding: 10px;
-        box-sizing: border-box;
     }
 
     .desktop{
