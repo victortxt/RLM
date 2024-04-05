@@ -104,7 +104,11 @@ buttonCreate.addEventListener('click', () => {
     document.querySelector('.noneTextBasic').textContent = 'Selecione quem é você';
     document.querySelector('.textIndentify').style.display = 'block';
     document.querySelector('.selectedInput').style.display = 'flex'
-    document.querySelector('#imgBackground').style.display = 'flex'
+    if(window.screen.availWidth >= 1000 ){
+        document.querySelector('#imgBackground').style.display = 'flex'
+        console.log(window.screen.availWidth)
+        console.log('teste')
+    }
     urlForm = 'b'
     form.action = urlForm
 
