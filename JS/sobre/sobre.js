@@ -57,7 +57,7 @@ function updateIdOnScroll() {
             currentId = currentId + 20;
         }
 
-        if(currentId === 60){
+        if(currentId === 60 && ){
             document.querySelector('.buttons-slide').style.display = 'flex'
         }
         
@@ -67,7 +67,9 @@ function updateIdOnScroll() {
             currentId = currentId - 20;
         }
 
-        document.querySelector('.buttons-slide').style.display = 'none'
+        if(){
+            document.querySelector('.buttons-slide').style.display = 'none'
+        }
     }
 
     // Atualizar a posição anterior do scroll
