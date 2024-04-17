@@ -57,19 +57,17 @@ function updateIdOnScroll() {
             currentId = currentId + 20;
         }
 
-        if(currentId === 60 && ){
+        if(currentId === 60){
             document.querySelector('.buttons-slide').style.display = 'flex'
         }
         
     } else {
         // Rolar para baixo: diminuir o ID
-        if(currentId !== 0){
+        if(currentId !== 0 ){
             currentId = currentId - 20;
         }
 
-        if(){
-            document.querySelector('.buttons-slide').style.display = 'none'
-        }
+        document.querySelector('.buttons-slide').style.display = 'none'
     }
 
     // Atualizar a posição anterior do scroll
