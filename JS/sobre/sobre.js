@@ -48,10 +48,10 @@ function updateIdOnScroll() {
     const divElement = document.querySelector("#Bg");
 
     if (scrollPosition < 30) {
-        $(divElement).fadeIn("slow");
+        $(divElement).fadeIn("fast");
     }
     else{
-        $(divElement).fadeOut("slow");
+        $(divElement).fadeOut("fast");
     }
 
 }

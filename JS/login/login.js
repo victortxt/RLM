@@ -73,7 +73,8 @@ buttonBtnOption.forEach(e => {
 
         document.querySelector('.textIndentify').textContent = textCareer
         document.querySelector('.inputContent').value = btnTouched.textContent.trim()
-        //
+        document.querySelector('#titleSelected').textContent = btnTouched.textContent.trim()
+        //btnTouched.textContent.trim()
         pCareer.textContent =  textCareer     
     })
     
