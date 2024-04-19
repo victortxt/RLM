@@ -74,7 +74,6 @@ buttonBtnOption.forEach(e => {
         document.querySelector('.textIndentify').textContent = textCareer
         document.querySelector('.inputContent').value = btnTouched.textContent.trim()
         document.querySelector('#titleSelected').textContent = btnTouched.textContent.trim()
-        //btnTouched.textContent.trim()
         pCareer.textContent =  textCareer     
     })
     
@@ -91,7 +90,7 @@ buttonLog.addEventListener('click', () => {
     document.querySelector('.selectedInput').style.display = 'none'
     document.querySelector('#imgBackground').style.display = 'none'
 
-    urlForm = 'a'
+    urlForm = '../../PHP/LOGS/login.php'
     form.action = urlForm
 })
 
@@ -109,7 +108,7 @@ buttonCreate.addEventListener('click', () => {
         console.log(window.screen.availWidth)
         console.log('teste')
     }
-    urlForm = 'b'
+    urlForm = '../../PHP/LOGS/create.php'
     form.action = urlForm
 
 })
