@@ -222,4 +222,8 @@ form{
         margin-top: 220px;
         width: 100%;
     }
+
+    .textIndentify{
+        display: none;
+    }
 }
