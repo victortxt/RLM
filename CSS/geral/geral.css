@@ -36,7 +36,6 @@ button, div, input[type="submit"] {
 }
 
 header{
-    background-color: var(--blackColor);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -53,6 +52,7 @@ header{
 }
 
 .head{
+    background-color: var(--blackColor);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -60,6 +60,7 @@ header{
     align-items: center;
     padding: 10px;
     box-sizing: border-box;
+    border-radius: 0px 0px 0px 0px;
 }
 
 h1{
