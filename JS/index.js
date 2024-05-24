@@ -17,3 +17,10 @@ btnLog.forEach((e) => {
         }
     })
 })
+
+
+if(document.querySelector('.back')){
+    document.querySelector('.back').addEventListener('click', () => {
+        location.href = 'file:///C:/Users/user_acronus/Documents/GitHub/RLM/pags/index.html'
+    })
+}
