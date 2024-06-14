@@ -1,0 +1,42 @@
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 150px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.imgLog{
+    height: 100px;
+    width: 100px;
+}
+
+.option > img{
+    height: 200px;
+    width: 100%;
+}
+
+.option{
+    background-color: rgb(195, 195, 195);
+    width: 100%;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.option > button{
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+    border: none;
+    transition: all .4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.option > button:hover{
+    transition: all .4s cubic-bezier(0.19, 1, 0.22, 1);
+    background-color: rgb(29, 134, 5);
+    color: white;
+}
