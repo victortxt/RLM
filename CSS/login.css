@@ -24,11 +24,12 @@ main{
 }
 
 .option{
-    background-color: rgb(195, 195, 195);
+    background-color: rgb(244, 244, 244);
     width: 300px;
     margin: 10px;
     border-radius: 15px;
     padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.632);
 }
 
 .option > button{
@@ -43,7 +44,7 @@ main{
 
 .option > button:hover{
     transition: all .4s cubic-bezier(0.19, 1, 0.22, 1);
-    background-color: rgb(29, 134, 5);
+    background-color: rgb(204, 245, 195);
     color: white;
 }
 
